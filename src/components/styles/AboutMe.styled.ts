@@ -1,15 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 
-const rotateDiv = keyframes`
-0% {transform: rotate(33deg)}
-100% {transform: rotate(-33deg)}`;
-
-const counterRotateDiv = keyframes`
-0% {transform: rotate(-33deg)}
-100% {transform: rotate(33deg)}`;
-
 export const StyledAboutMe = styled.div`
-	margin: 4rem 0;
+	margin: 8rem 0;
 	padding: 1rem;
 	display: flex;
 	flex-direction: column;
@@ -32,6 +24,14 @@ export const StyledAboutMe = styled.div`
 	}
 `;
 
+const rotateDiv = keyframes`
+0% {transform: rotate(33deg)}
+100% {transform: rotate(-33deg)}`;
+
+const counterRotateDiv = keyframes`
+0% {transform: rotate(-33deg)}
+100% {transform: rotate(33deg)}`;
+
 export const StyledAboutMePhoto = styled.div`
 	width: 250px;
 	height: 250px;
@@ -40,9 +40,8 @@ export const StyledAboutMePhoto = styled.div`
 	justify-content: center;
 	overflow: hidden;
 	border-radius: 25%;
-	margin-top: 4rem;
+	margin-top: 6rem;
 	background-color: ${({ theme }) => theme.colorPrimary};
-	transform: rotate(25deg);
 	animation: ${rotateDiv} 3s alternate infinite;
 	img {
 		width: 100%;
@@ -50,5 +49,22 @@ export const StyledAboutMePhoto = styled.div`
 		object-fit: cover;
 		border-radius: 50%;
 		animation: ${counterRotateDiv} 3s alternate infinite;
+	}
+`;
+
+const bounce = keyframes`
+0% {transform: translateY(-1rem)}
+100% {transform: translateY(1rem)}`;
+
+export const ScrollDown = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	font-size: 1.5rem;
+	margin-top: 6rem;
+	animation: ${bounce} 1.5s alternate infinite;
+	svg {
+		color: ${({ theme }) => theme.colorPrimary};
 	}
 `;

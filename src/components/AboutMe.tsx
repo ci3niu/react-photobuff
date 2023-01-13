@@ -1,6 +1,8 @@
 import Typed from 'react-typed';
-import { StyledAboutMe, StyledAboutMePhoto } from './styles/AboutMe.styled';
+import { StyledAboutMe, StyledAboutMePhoto, ScrollDown } from './styles/AboutMe.styled';
 import fakePerson from '../assets/fakePerson.jpg';
+import { CgMouse } from 'react-icons/cg';
+import { FaAngleDown } from 'react-icons/fa';
 
 const AboutMe = () => {
 	return (
@@ -20,6 +22,11 @@ const AboutMe = () => {
 			<StyledAboutMePhoto>
 				<img src={fakePerson} alt='avatar' />
 			</StyledAboutMePhoto>
+			<ScrollDown>
+				<CgMouse />
+				Scroll down
+				<FaAngleDown />
+			</ScrollDown>
 		</StyledAboutMe>
 	);
 };

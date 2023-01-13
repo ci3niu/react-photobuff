@@ -7,7 +7,8 @@ const StyledGlobalStyles = createGlobalStyle`
   }
 
   body {
- font-family: 'Source Sans Pro', sans-serif 
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow-x: hidden;
   }
 
   ul {

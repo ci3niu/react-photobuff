@@ -7,6 +7,7 @@ import { useState, useEffect } from 'react';
 import { themeDefault, themeLight, themeDark } from './components/styles/Themes.styled';
 import Sidebar from './components/Sidebar';
 import StyledBackdrop from './components/styles/Backdrop.styled';
+import ContentPlaceholder from './components/ContentPlaceholder';
 
 const App = () => {
 	const [theme, setTheme] = useState(themeDefault);
@@ -16,7 +17,6 @@ const App = () => {
 		setSidebarState((prevState) => !prevState);
 		console.log('SidebarState', sidebarState);
 	};
-
 	const handleThemeToggle = () => {
 		theme.id === 'dark' ? setTheme({ ...themeDefault, ...themeLight }) : setTheme({ ...themeDefault, ...themeDark });
 	};
@@ -38,6 +38,7 @@ const App = () => {
 
 				<Header sidebarHandler={handleSidebarState} />
 				<AboutMe />
+				<ContentPlaceholder />
 			</StyledWrapper>
 		</ThemeProvider>
 	);

@@ -20,6 +20,7 @@ export const StyledHeaderNav = styled.div`
 	ul {
 		display: flex;
 		li {
+			cursor: pointer;
 			display: flex;
 			align-items: center;
 			padding: 0 0.5rem;
