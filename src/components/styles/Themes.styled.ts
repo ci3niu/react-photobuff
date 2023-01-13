@@ -4,10 +4,12 @@ interface ITheme {
 	colorBackgroundSecondary?: string;
 	colorText?: string;
 	colorPrimary?: string;
+	colorSecondary?: string;
 }
 
 export const themeDefault: ITheme = {
 	colorPrimary: 'teal',
+	colorSecondary: '#777779',
 };
 
 export const themeDark: ITheme = {

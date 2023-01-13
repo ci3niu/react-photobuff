@@ -15,6 +15,8 @@ const StyledGlobalStyles = createGlobalStyle`
   }
 
 
+
+
 `;
 
 export default StyledGlobalStyles;

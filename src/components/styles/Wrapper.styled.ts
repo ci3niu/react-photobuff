@@ -15,6 +15,10 @@ const StyledWrapper = styled.div`
 		cursor: pointer;
 		color: ${({ theme }) => theme.colorText};
 	}
+
+	a {
+		color: ${({ theme }) => theme.colorText};
+	}
 `;
 
 export default StyledWrapper;

@@ -24,9 +24,11 @@ const StyledSidebar = styled.div`
 		color: ${({ theme }) => theme.colorPrimary};
 		border: 1px solid ${({ theme }) => theme.colorPrimary};
 	}
-
 	h2 {
-		margin-bottom: 2rem;
+		margin-bottom: 3rem;
+	}
+	h4 {
+		margin-bottom: 0.5rem;
 	}
 `;
 
