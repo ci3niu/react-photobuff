@@ -15,7 +15,7 @@ const StyledGlobalStyles = createGlobalStyle`
     list-style: none;
   }
 
-
+  scroll-behavior: smooth;
 
 
 `;

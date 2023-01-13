@@ -40,7 +40,7 @@ export const StyledAboutMePhoto = styled.div`
 	justify-content: center;
 	overflow: hidden;
 	border-radius: 25%;
-	margin-top: 6rem;
+	margin-top: 5rem;
 	background-color: ${({ theme }) => theme.colorPrimary};
 	animation: ${rotateDiv} 3s alternate infinite;
 	img {
@@ -62,7 +62,7 @@ export const ScrollDown = styled.div`
 	justify-content: center;
 	gap: 1rem;
 	font-size: 1.5rem;
-	margin-top: 6rem;
+	margin-top: 4rem;
 	animation: ${bounce} 1.5s alternate infinite;
 	svg {
 		color: ${({ theme }) => theme.colorPrimary};

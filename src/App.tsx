@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react';
 import { themeDefault, themeLight, themeDark } from './components/styles/Themes.styled';
 import Sidebar from './components/Sidebar';
 import StyledBackdrop from './components/styles/Backdrop.styled';
-import ContentPlaceholder from './components/ContentPlaceholder';
+import Projects from './components/Projects';
 
 const App = () => {
 	const [theme, setTheme] = useState(themeDefault);
@@ -38,7 +38,7 @@ const App = () => {
 
 				<Header sidebarHandler={handleSidebarState} />
 				<AboutMe />
-				<ContentPlaceholder />
+				<Projects />
 			</StyledWrapper>
 		</ThemeProvider>
 	);
