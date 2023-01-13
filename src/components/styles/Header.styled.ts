@@ -10,6 +10,10 @@ export const StyledHeader = styled.div`
 export const StyledHeaderLogo = styled.button`
 	display: flex;
 	align-items: center;
+	svg {
+		fill: ${({ theme }) => theme.colorPrimary};
+		padding-right: 0.5rem;
+	}
 `;
 
 export const StyledHeaderNav = styled.div`

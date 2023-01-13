@@ -1,10 +1,13 @@
 import Typed from 'react-typed';
-import StyledAboutMe from './styles/AboutMe.styled';
+import { StyledAboutMe, StyledAboutMePhoto } from './styles/AboutMe.styled';
+import fakePerson from '../assets/fakePerson.jpg';
 
 const AboutMe = () => {
 	return (
 		<StyledAboutMe>
-			<h1>Hi, I'm Imag </h1>
+			<h1>
+				Hi, I'm <span className='name'>Imag</span>{' '}
+			</h1>
 			<h2>
 				<Typed
 					strings={['Photographer', 'Designer', 'Freelancer', 'Perfectionist']}
@@ -14,6 +17,9 @@ const AboutMe = () => {
 				/>
 			</h2>
 			<p>I keep taking photos to escape the brutal reality.</p>
+			<StyledAboutMePhoto>
+				<img src={fakePerson} alt='avatar' />
+			</StyledAboutMePhoto>
 		</StyledAboutMe>
 	);
 };

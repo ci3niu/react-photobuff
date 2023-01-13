@@ -19,10 +19,11 @@ const StyledSidebar = styled.div`
 	animation: ${slideIn};
 	animation-duration: 0.5s;
 	button {
-		height: 2rem;
-		width: 4rem;
+		width: 5rem;
 		color: ${({ theme }) => theme.colorPrimary};
 		border: 1px solid ${({ theme }) => theme.colorPrimary};
+		font-weight: bold;
+		padding: 0 1rem;
 	}
 	h2 {
 		margin-bottom: 3rem;
