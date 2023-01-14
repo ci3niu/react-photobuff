@@ -5,7 +5,7 @@ const slideIn = keyframes`
  100% { transform: translateX(0)}
 `;
 
-const StyledSidebar = styled.div`
+export const StyledSidebar = styled.div`
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -33,4 +33,11 @@ const StyledSidebar = styled.div`
 	}
 `;
 
-export default StyledSidebar;
+export const StyledBackdrop = styled.div`
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.75);
+`;

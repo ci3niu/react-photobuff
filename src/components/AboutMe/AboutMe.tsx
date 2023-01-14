@@ -1,6 +1,6 @@
 import Typed from 'react-typed';
-import { StyledAboutMe, StyledAboutMePhoto, ScrollDown } from './styles/AboutMe.styled';
-import fakePerson from '../assets/fakePerson.jpg';
+import { StyledAboutMe, StyledAboutMePhoto, ScrollDown } from './AboutMe.styled';
+import fakePerson from '../../assets/fakePerson.jpg';
 import { CgMouse } from 'react-icons/cg';
 import { FaAngleDown } from 'react-icons/fa';
 

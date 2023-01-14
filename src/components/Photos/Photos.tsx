@@ -1,8 +1,8 @@
-import { StyledProjects, StyledCarousel, CarouselItem } from './styles/Projects.styled';
+import { StyledPhotos, StyledCarousel, CarouselItem } from './Photos.styled';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-const Projects = () => {
+const Photos = () => {
 	const slides = [
 		{
 			id: 1,
@@ -27,7 +27,7 @@ const Projects = () => {
 	];
 
 	return (
-		<StyledProjects>
+		<StyledPhotos>
 			<h1>Photos</h1>
 			<p>Some of my photos</p>
 			<StyledCarousel>
@@ -50,8 +50,8 @@ const Projects = () => {
 					))}
 				</Carousel>
 			</StyledCarousel>
-		</StyledProjects>
+		</StyledPhotos>
 	);
 };
 
-export default Projects;
+export default Photos;

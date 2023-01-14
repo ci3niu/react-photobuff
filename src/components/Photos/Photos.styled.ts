@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 
-export const StyledProjects = styled.div`
+export const StyledPhotos = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	width: 100%;
+	max-width: 768px;
 	h1 {
 		color: ${({ theme }) => theme.colorPrimary};
 		font-size: 2rem;
@@ -34,8 +36,8 @@ export const StyledCarousel = styled.div`
 export const CarouselItem = styled.div`
 	width: 100%;
 	height: 420px;
-	border-radius: 1rem;
 	overflow: hidden;
+	border-radius: 1rem;
 
 	img {
 		width: 100%;

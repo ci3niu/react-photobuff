@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { StyledHeader, StyledHeaderLogo, StyledHeaderNav } from './styles/Header.styled';
+import { StyledHeader, StyledHeaderLogo, StyledHeaderNav } from './Header.styled';
 import { MdMonochromePhotos } from 'react-icons/md';
 import { BiCog } from 'react-icons/bi';
 import { BsInstagram } from 'react-icons/bs';

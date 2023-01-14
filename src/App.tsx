@@ -1,13 +1,16 @@
-import AboutMe from './components/AboutMe';
-import Header from './components/Header';
+import { useState, useEffect } from 'react';
+
+import { ThemeProvider } from 'styled-components';
+import { themeDefault, themeLight, themeDark } from './components/styles/Themes.styled';
 import StyledGlobalStyles from './components/styles/StyledGlobalStyles';
 import StyledWrapper from './components/styles/Wrapper.styled';
-import { ThemeProvider } from 'styled-components';
-import { useState, useEffect } from 'react';
-import { themeDefault, themeLight, themeDark } from './components/styles/Themes.styled';
-import Sidebar from './components/Sidebar';
-import StyledBackdrop from './components/styles/Backdrop.styled';
-import Projects from './components/Projects';
+
+import Sidebar from './components/Sidebar/Sidebar';
+import { StyledBackdrop } from './components/Sidebar/Sidebar.styled';
+
+import Header from './components/Header/Header';
+import AboutMe from './components/AboutMe/AboutMe';
+import Photos from './components/Photos/Photos';
 
 const App = () => {
 	const [theme, setTheme] = useState(themeDefault);
@@ -38,7 +41,7 @@ const App = () => {
 
 				<Header sidebarHandler={handleSidebarState} />
 				<AboutMe />
-				<Projects />
+				<Photos />
 			</StyledWrapper>
 		</ThemeProvider>
 	);

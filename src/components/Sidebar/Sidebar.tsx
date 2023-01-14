@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import StyledSidebar from './styles/Sidebar.styled';
+import { StyledSidebar } from './Sidebar.styled';
 
 interface SidebarProps {
 	themeHandler: () => void;

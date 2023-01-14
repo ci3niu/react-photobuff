@@ -5,6 +5,8 @@ export const StyledHeader = styled.div`
 	align-items: center;
 	justify-content: space-between;
 	padding: 1rem;
+	width: 100%;
+	max-width: 768px;
 `;
 
 export const StyledHeaderLogo = styled.button`

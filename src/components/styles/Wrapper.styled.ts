@@ -3,11 +3,10 @@ import styled from 'styled-components';
 const StyledWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
-	width: 100vw;
+	align-items: center;
 	background-color: ${({ theme }) => theme.colorBackground};
 	color: ${({ theme }) => theme.colorText};
 	transition: all 0.35s;
-
 	button {
 		border: none;
 		background: none;
