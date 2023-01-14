@@ -24,14 +24,6 @@ export const StyledAboutMe = styled.div`
 	}
 `;
 
-const rotateDiv = keyframes`
-0% {transform: rotate(33deg)}
-100% {transform: rotate(-33deg)}`;
-
-const counterRotateDiv = keyframes`
-0% {transform: rotate(-33deg)}
-100% {transform: rotate(33deg)}`;
-
 export const StyledAboutMePhoto = styled.div`
 	width: 250px;
 	height: 250px;
@@ -40,15 +32,15 @@ export const StyledAboutMePhoto = styled.div`
 	justify-content: center;
 	overflow: hidden;
 	border-radius: 25%;
-	margin-top: 5rem;
+	margin-top: 6rem;
 	background-color: ${({ theme }) => theme.colorPrimary};
-	animation: ${rotateDiv} 3s alternate infinite;
+	transform: rotate(17deg);
 	img {
+		transform: rotate(-17deg);
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
 		border-radius: 50%;
-		animation: ${counterRotateDiv} 3s alternate infinite;
 	}
 `;
 
@@ -62,7 +54,7 @@ export const ScrollDown = styled.div`
 	justify-content: center;
 	gap: 1rem;
 	font-size: 1.5rem;
-	margin-top: 4rem;
+	margin-top: 6rem;
 	animation: ${bounce} 1.5s alternate infinite;
 	svg {
 		color: ${({ theme }) => theme.colorPrimary};

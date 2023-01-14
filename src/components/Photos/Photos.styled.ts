@@ -25,7 +25,7 @@ export const StyledCarousel = styled.div`
 	padding: 0.5rem;
 	border-radius: 1rem;
 	background-color: ${({ theme }) => theme.colorSecondary};
-	box-shadow: 0 100px 100px rgba(255, 0, 0, 0.1);
+	box-shadow: 5px 5px 25px 5px ${({ theme }) => theme.colorPrimary + '40'};
 	overflow: hidden;
 
 	.carousel .control-dots .dot {

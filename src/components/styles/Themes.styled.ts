@@ -8,7 +8,7 @@ interface ITheme {
 }
 
 export const themeDefault: ITheme = {
-	colorPrimary: 'teal',
+	colorPrimary: '#008080',
 	colorSecondary: '#777779',
 };
 

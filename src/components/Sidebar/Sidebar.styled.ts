@@ -9,7 +9,7 @@ export const StyledSidebar = styled.div`
 	position: fixed;
 	top: 0;
 	right: 0;
-	z-index: 2;
+	z-index: 20;
 	display: flex;
 	flex-direction: column;
 	width: 60%;
@@ -44,5 +44,5 @@ export const StyledBackdrop = styled.div`
 	width: 100%;
 	height: 100vh;
 	background-color: rgba(0, 0, 0, 0.75);
-	z-index: 1;
+	z-index: 10;
 `;
