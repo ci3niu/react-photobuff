@@ -7,6 +7,7 @@ export const StyledPhotos = styled.div`
 	justify-content: center;
 	width: 100%;
 	max-width: 768px;
+	padding: 1rem;
 	h1 {
 		color: ${({ theme }) => theme.colorPrimary};
 		font-size: 2rem;
@@ -21,10 +22,10 @@ export const StyledPhotos = styled.div`
 export const StyledCarousel = styled.div`
 	display: flex;
 	align-items: center;
-	width: 80%;
+	width: 100%;
 	padding: 0.5rem;
 	border-radius: 1rem;
-	background-color: ${({ theme }) => theme.colorSecondary};
+	background-color: ${({ theme }) => theme.colorSecondary + '4D'};
 	box-shadow: 5px 5px 25px 5px ${({ theme }) => theme.colorPrimary + '40'};
 	overflow: hidden;
 

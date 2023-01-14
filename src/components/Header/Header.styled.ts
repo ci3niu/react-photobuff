@@ -9,7 +9,7 @@ export const StyledHeader = styled.div<StyledHeaderProps>`
 	justify-content: center;
 	padding: 1rem;
 	width: 100%;
-	height: 40px;
+	height: 60px;
 	position: fixed;
 	top: 0;
 	z-index: 1;

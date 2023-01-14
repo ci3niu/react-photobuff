@@ -11,6 +11,7 @@ import { StyledBackdrop } from './components/Sidebar/Sidebar.styled';
 import Header from './components/Header/Header';
 import AboutMe from './components/AboutMe/AboutMe';
 import Photos from './components/Photos/Photos';
+import Pricing from './components/Pricing/Pricing';
 
 const App = () => {
 	const [theme, setTheme] = useState(themeDefault);
@@ -42,6 +43,7 @@ const App = () => {
 				<Header sidebarHandler={handleSidebarState} />
 				<AboutMe />
 				<Photos />
+				<Pricing />
 			</StyledWrapper>
 		</ThemeProvider>
 	);
