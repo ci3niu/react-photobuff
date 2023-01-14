@@ -8,6 +8,7 @@ export const StyledPricing = styled.div`
 	margin-top: 6rem;
 	max-width: 768px;
 	padding: 1rem;
+	margin-bottom: 2rem;
 
 	h1 {
 		color: ${({ theme }) => theme.colorPrimary};
@@ -56,6 +57,7 @@ export const StyledPricingItem = styled.div`
 		padding: 0.5rem 1rem;
 		border-radius: 0.5rem;
 		background-color: ${({ theme }) => theme.colorPrimary};
+		color: white;
 
 		&:hover {
 			scale: 1.1;

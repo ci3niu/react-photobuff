@@ -12,6 +12,7 @@ import Header from './components/Header/Header';
 import AboutMe from './components/AboutMe/AboutMe';
 import Photos from './components/Photos/Photos';
 import Pricing from './components/Pricing/Pricing';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
 	const [theme, setTheme] = useState(themeDefault);
@@ -44,6 +45,7 @@ const App = () => {
 				<AboutMe />
 				<Photos />
 				<Pricing />
+				<Footer />
 			</StyledWrapper>
 		</ThemeProvider>
 	);
